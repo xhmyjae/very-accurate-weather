@@ -3,6 +3,7 @@ function changeBackground()
     let currentDate = new Date();
     let currentTime = currentDate.getHours();
     let body = document.querySelector("body");
+    let date = document.querySelector(".date");
 
     if (currentTime >=4 && currentTime <= 9) {
         body.classList.remove("back22-3");
@@ -17,6 +18,8 @@ function changeBackground()
         body.classList.remove("back16-21");
         body.classList.add("back22-3");
     }
+
+    date.innerHTML = currentDate.toDateString();
 }
 
 window.addEventListener('load', () => {

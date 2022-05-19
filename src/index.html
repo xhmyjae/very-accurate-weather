@@ -11,7 +11,7 @@
     <link rel="icon" href="../resources/icon.jpg">
     <script src="https://kit.fontawesome.com/74fed0e2b5.js" crossorigin="anonymous"></script>
 
-    <!--    <script defer src="../scripts/index.js"></script>-->
+    <script defer src="../scripts/index.js"></script>
     <script defer src="../scripts/change-background.js"></script>
     <link rel="stylesheet" href="../style/main.css">
 </head>
@@ -20,48 +20,44 @@
 <div class="location">
     <div class="current-location">
         <i class="fa-solid fa-location-dot"></i>
-        <span class="current-location-name">paris, france</span>
+        <span class="current-location-name"></span>
     </div>
     <div class="search-location">
         <label>
-            <input type="text" placeholder="Search location">
+            <input type="text" placeholder="Search location" id="city-search">
         </label>
-        <button class="search-button">
+        <button id="search-button">
             <i class="fas fa-search"></i>
         </button>
     </div>
 </div>
 
-<div class="weather">
+<div class="weather hide">
     <div class="weather-infos">
         <div class="temperature">
-            <span class="temperature-value">12</span>
+            <span class="temperature-value"></span>
             <span class="temperature-unit">°C</span>
             <div class="weather-icon">
                 <i class="fa-solid fa-cloud-sun"></i>
             </div>
         </div>
         <div class="weather-description">
-            <span class="weather-state">Sunny</span>
+            <span class="weather-state"></span>
             <div class="wind-state">
                 <i class="fa-solid fa-wind"></i>
-                <span class="wind-value">8.8km/h</span>
-            </div>
-            <div class="rain-state">
-                <i class="fa-solid fa-umbrella"></i>
-                <span class="rain-value">0mm</span>
+                <span class="wind-value"></span>
             </div>
             <div class="humidity-state">
                 <i class="fa-solid fa-droplet"></i>
-                <span class="humidity-value">70%</span>
+                <span class="humidity-value"></span>
             </div>
             <div class="min-max-temperature">
-                <span class="min-temperature-title">min :</span>
-                <span class="min-temperature">12°C</span>
-                <span class="max-temperature-title">max :</span>
-                <span class="max-temperature">15°C</span>
+                <span class="min-temperature-title"><i class="fa-solid fa-arrow-down-long"></i> min :</span>
+                <span class="min-temperature"></span>
+                <span class="max-temperature-title"><i class="fa-solid fa-arrow-up-long"></i> max :</span>
+                <span class="max-temperature"></span>
             </div>
-            <span class="date">19/02/2000</span>
+            <span class="date"></span>
         </div>
     </div>
 </div>

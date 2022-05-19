@@ -67,7 +67,7 @@ input[type="text"] {
     width: 30vh;
 }
 
-button.search-button {
+button#search-button {
     border: none;
     padding: 1vh;
 }
@@ -89,12 +89,12 @@ span.weather-state {
     font-size: 3vh;
 }
 
-.wind-state, .rain-state, .humidity-state, .min-max-temperature {
+.wind-state, .humidity-state, .min-max-temperature {
     font-size: 2.5vh;
     margin: 1vh 0 0 8vh;
 }
 
-span.wind-value. span.rain-value, span.humidity-value {
+span.wind-value, span.humidity-value {
     margin-left: 0.5vh;
 }
 
@@ -106,3 +106,10 @@ span.date {
     font-size: 2.5vh;
 }
 
+.fa-arrow-up-long {
+    margin-left: 1vh;
+}
+
+.hide {
+    display: none;
+}
