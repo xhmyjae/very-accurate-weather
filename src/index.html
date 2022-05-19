@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="xhmyjae">
+    <meta name="description" content="Weather update site.">
+    <title>Accurate Weather</title>
+
+    <link rel="icon" href="../resources/icon.jpg">
+    <script src="https://kit.fontawesome.com/74fed0e2b5.js" crossorigin="anonymous"></script>
+
+    <!--    <script defer src="../scripts/index.js"></script>-->
+    <script defer src="../scripts/change-background.js"></script>
+    <link rel="stylesheet" href="../style/main.css">
+</head>
+<body>
+
+<div class="location">
+    <div class="current-location">
+        <i class="fa-solid fa-location-dot"></i>
+        <span class="current-location-name">paris, france</span>
+    </div>
+    <div class="search-location">
+        <label>
+            <input type="text" placeholder="Search location">
+        </label>
+        <button class="search-button">
+            <i class="fas fa-search"></i>
+        </button>
+    </div>
+</div>
+
+<div class="weather">
+    <div class="weather-infos">
+        <div class="temperature">
+            <span class="temperature-value">12</span>
+            <span class="temperature-unit">°C</span>
+            <div class="weather-icon">
+                <i class="fa-solid fa-cloud-sun"></i>
+            </div>
+        </div>
+        <div class="weather-description">
+            <span class="weather-state">Sunny</span>
+            <div class="wind-state">
+                <i class="fa-solid fa-wind"></i>
+                <span class="wind-value">8.8km/h</span>
+            </div>
+            <div class="rain-state">
+                <i class="fa-solid fa-umbrella"></i>
+                <span class="rain-value">0mm</span>
+            </div>
+            <div class="humidity-state">
+                <i class="fa-solid fa-droplet"></i>
+                <span class="humidity-value">70%</span>
+            </div>
+            <div class="min-max-temperature">
+                <span class="min-temperature-title">min :</span>
+                <span class="min-temperature">12°C</span>
+                <span class="max-temperature-title">max :</span>
+                <span class="max-temperature">15°C</span>
+            </div>
+            <span class="date">19/02/2000</span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
