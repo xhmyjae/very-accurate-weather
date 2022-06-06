@@ -58,6 +58,9 @@ html, body {
 
 .search-location {
     margin: 4vh;
+    display: flex;
+    position: absolute;
+    right: 0;
 }
 
 input[type="text"] {
@@ -70,6 +73,10 @@ input[type="text"] {
 button#search-button {
     border: none;
     padding: 1vh;
+    width: 4vh;
+    height: 4vh;
+    margin-left: 1vh;
+    cursor: pointer;
 }
 
 .temperature {
@@ -114,34 +121,22 @@ span.date {
     display: none;
 }
 
-.autocomplete-items {
-    position: absolute;
-    border: 1px solid #d4d4d4;
-    border-bottom: none;
-    border-top: none;
-    z-index: 99;
-    /*position the autocomplete items to be the same width as the container:*/
-    top: 100%;
-    left: 0;
-    right: 0;
-}
-.autocomplete-items div {
-    padding: 10px;
-    cursor: pointer;
-    background-color: #fff;
-    border-bottom: 1px solid #d4d4d4;
-}
-.autocomplete-items div:hover {
-    /*when hovering an item:*/
-    background-color: #e9e9e9;
-}
-.autocomplete-active {
-    /*when navigating through the items using the arrow keys:*/
-    background-color: DodgerBlue !important;
-    color: #ffffff;
-}
-.autocomplete {
-    /*the container must be positioned relative:*/
+.auto-complete-list {
     position: relative;
-    display: inline-block;
+    width: 100%;
+    background: #00000054;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.auto-complete-cities {
+    width: 100%;
+    cursor: pointer;
+    padding: 1vh;
+}
+
+.auto-complete-cities:hover {
+    background: #00000054;
 }
