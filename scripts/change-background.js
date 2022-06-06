@@ -1,3 +1,6 @@
+/**
+ * Changes the background of the page depending on the time of day
+ */
 function changeBackground()
 {
     let currentDate = new Date();

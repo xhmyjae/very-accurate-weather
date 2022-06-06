@@ -3,6 +3,8 @@ let citySearched = document.querySelector("#city-search");
 let currentLocationName = document.querySelector(".current-location-name");
 let weather = document.querySelector(".weather");
 
+/* Event listener that listens for a click on the submit button. If the city searched is empty, it will display "No
+city found". If not, it will call the API function with the city searched as a parameter. */
 submitBtn.addEventListener('click', e => {
     if (citySearched === "") {
         currentLocationName.innerHTML = "No city found";
@@ -13,6 +15,8 @@ submitBtn.addEventListener('click', e => {
     }
 });
 
+/* Keydown event. If the keycode is 13, it will call the API function with the city searched as a
+parameter. */
 window.addEventListener('keydown', e => {
     if (e.keyCode === 13) {
         if (citySearched === "") {
@@ -33,6 +37,11 @@ let humidityValue = document.querySelector(".humidity-value");
 let minTemperature = document.querySelector(".min-temperature");
 let maxTemperature = document.querySelector(".max-temperature");
 
+/**
+ * Takes a location as a parameter, and then uses the OpenWeatherMap API to get the weather data for that location
+ *
+ * @param location The location you want to get the weather for.
+ */
 function API(location)
 {
     let apiKey = '79705064e49cce04fe6b9253fd2b512d';
