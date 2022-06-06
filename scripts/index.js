@@ -36,6 +36,7 @@ let rainValue = document.querySelector(".rain-value");
 let humidityValue = document.querySelector(".humidity-value");
 let minTemperature = document.querySelector(".min-temperature");
 let maxTemperature = document.querySelector(".max-temperature");
+let weatherIcon = document.querySelector(".weather-icon img");
 
 /**
  * Takes a location as a parameter, and then uses the OpenWeatherMap API to get the weather data for that location
@@ -67,6 +68,7 @@ function API(location)
                 humidityValue.innerHTML = data.main.humidity + "%";
                 minTemperature.innerHTML = data.main.temp_min + '°C';
                 maxTemperature.innerHTML = data.main.temp_max + '°C';
+                weatherIcon.src =  'http://openweathermap.org/img/wn/' + data.weather[0].icon + '@2x.png';
             }
         })
         .catch(error => {
